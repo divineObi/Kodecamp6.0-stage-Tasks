@@ -1,9 +1,5 @@
 // 1. Write a function that accepts a GitHub username as an argument and returns the details of that user if the user exists.
-
 // Use https://api.github.com/users/<GitHub username>
-
- 
-
 // Use fetch and async/await for this exercise.
 
     async function getGitHubUserDetails(username) {
