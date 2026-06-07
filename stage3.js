@@ -28,3 +28,32 @@
             console.log('User not found');
         }
     });
+
+
+    // 2. Write a class named KCStore that has "products" as it's property. It should also have methods to add, update, view and delete products.
+    class KCStore {
+        constructor() {
+            this.products = [];
+        }
+
+        addProduct(product) {
+            this.products.push(product);
+        }
+
+        updateProduct(index, updatedProduct) {
+            if (index >= 0 && index < this.products.length) {
+                this.products[index] = updatedProduct;
+            }
+        }
+
+        viewProducts() {
+            return this.products;
+        }
+
+        deleteProduct(index) {
+            if (index >= 0 && index < this.products.length) {
+                this.products.splice(index, 1);
+            }
+        }
+    }
+    
